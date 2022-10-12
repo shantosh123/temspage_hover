@@ -1,0 +1,163 @@
+
+:root {
+    --themeColor: #4288C8;
+}
+.row{
+    display: flex;
+}
+.our-team{
+    position:relative;
+    overflow: hidden;
+    height: 355px;
+}
+.our-team .team-pic > img{
+    width: 90%;
+    border-radius: 10px 10px 0px 0px;
+    height:auto;
+    
+}
+.our-team .team-profile{
+    background:#3ba2e2;
+    padding: 0 24px;
+    position: absolute;
+    right: 0;
+    bottom: -46%;
+    width: 90%;
+    min-height:245px;
+    transition: all 0.25s ease 0s;
+}
+.our-team:hover .team-profile{
+    bottom:0px;
+}
+.our-team .team-profile:before{
+    content: "";
+    border-bottom: 30px solid #3ba2e2;
+    border-right: 262px solid transparent;
+    position: absolute;
+    top:-30px;
+    left: 0;
+}
+.our-team .team-title{
+    line-height: 22px;
+    font-family: 'Kanit', sans-serif;
+    margin-top: 10px;
+    font-weight: 300;
+  
+}
+.our-team .team-title:after{
+    content:"";
+    display: block;
+    width: 15%;
+    border-bottom:4px solid #fff;
+    padding-bottom:5px;
+}
+.our-team .team-title a{
+    font-size: 23px;
+    text-transform: uppercase;
+    font-weight:500;
+    color: black;
+    display: block;
+    transition:all 0.2s linear 0s;
+    
+}
+.our-team .team-title a:hover{
+    color:#333;
+    text-decoration: none;
+}
+.our-team .team-title > small{
+    font-size: 16px;
+    font-weight: 400;
+    color:#fff;
+    
+}
+.our-team .description{
+    color: #fff;
+    line-height: 25px;
+    font-family: 'Kanit', sans-serif;
+    font-size: 300;
+ 
+}
+.our-team .description:after{
+    content:"";
+    display:block;
+    border-bottom:1px solid #fff;
+    margin-top: 10px;
+}
+.our-team .team-social{
+    padding:0;
+    margin-left: 80px;
+}
+.our-team .team-social > li{
+    display: inline-block;
+    margin-right: 12px;
+    
+}
+.our-team .team-social > li > a{
+    color:#fff;
+    font-size:20px;
+}
+.our-team .team-social > li > a:hover{
+    text-decoration: none;
+    color: black;
+}
+@media only screen and (max-width: 990px) {
+    .our-team{
+        width: 310px;
+        margin: 0 auto 15px;
+    }
+    .our-team .team-profile:before{
+        border-right: 300px solid transparent;
+    }
+}
+@media only screen and (max-width: 359px) {
+    .our-team{
+        width: auto;
+    }
+}
+
+.heading{
+  
+    font-family: 'Kanit', sans-serif;
+    font-weight: 500;
+  }
+
+  .details{
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+ 
+}
+.tabs {
+    margin-left: 10px;
+}
+.tabs , .btn{
+    margin-left: 10px;
+    margin-top: 5px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+    
+}
+.btn {
+    border: none;
+    outline: none;
+    padding: 10px 12px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    font-weight: bold;
+    
+  }
+
+  
+  .btn:hover {
+    background-color: var(--themeColor);
+  }
+  
+  .btn.active {
+    background-color: var(--themeColor);
+   
+  }
+  #myBtnContainer{
+    background-color:none;
+  }
+  
